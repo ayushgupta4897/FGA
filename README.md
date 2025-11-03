@@ -1,28 +1,7 @@
 # FGA - Fact-Grounded Attention Implementation
 
-## ✅ POC Implementation Complete
 
-Successfully implemented **Fact-Grounded Attention (FGA)** for Llama 3.2 3B with genuine factual grounding capabilities.
-
-### Key Achievements
-
-**🎯 Real Data, Real Results**
-- Implemented with **actual smartphone specifications** (iPhone 15, Galaxy S24, Pixel 8)
-- No placeholders or mock data - every fact is genuine
-- Successfully retrieves precise specs: battery capacity, camera MP, USB types, processors
-
-**⚡ Optimized for Apple Silicon M4 Max**
-- Full MPS (Metal Performance Shaders) acceleration
-- Multi-tier caching: GPU → CPU → Disk
-- Sub-millisecond lookups with GPU cache hits
-
-**🔧 Technical Correctness**
-- Fixed all mathematical dimension bugs (G matrix correctly sized as L×L)
-- Hard constraints applied at correct location (output logits, not attention)
-- Chunked entity recognition (16-token stride) for efficiency
-- Separate K/Q projectors for proper fact embedding
-
-### Components Implemented
+### Components 
 
 1. **FGA Attention Layer** (`src/fga_attention.py`)
    - Dimensional-correct grounding score computation
